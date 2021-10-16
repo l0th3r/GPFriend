@@ -2,7 +2,7 @@
   "name": "gameprogfriend",
   "version": "1.0.0",
   "description": "The Game programming bot",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
@@ -13,6 +13,9 @@
     "@discordjs/rest": "^0.1.0-canary.0",
     "discord-api-types": "^0.23.1",
     "discord.js": "^13.2.0",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "got": "^10.4.0",
+    "jsdom": "^16.2.2",
+    "node-fetch": "^2.6.5"
   }
 }
