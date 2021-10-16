@@ -42,7 +42,8 @@ module.exports = {
             .setTimestamp(answer.created_at)
             .setFooter(`Posted by ${answer.fun_name}`);
             
-            interaction.editReply({ content: "<@" + interaction.user.id + ">", embeds: [exampleEmbed], ephemeral: true });
+            await interaction.editReply({ embeds: [exampleEmbed], ephemeral: true });
+            await interaction.followUp({ content: "<@" + interaction.user.id + "> if the answer doesnt suit you, try different keywords or in anthor order :)", ephemeral: true });
         } else {
             interaction.editReply({ content: `I'm sorry I didn't find anything for **${arg}** :(`, ephemeral: true });
         }
